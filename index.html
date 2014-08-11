@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Cartaregistrada : Módulo de cálculo de frete por Carta Registrada para Magento">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Cartaregistrada</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Bertuga/cartaregistrada">View on GitHub</a>
+
+          <h1 id="project_title">Cartaregistrada</h1>
+          <h2 id="project_tagline">Módulo de cálculo de frete por Carta Registrada para Magento</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Bertuga/cartaregistrada/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Bertuga/cartaregistrada/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="bertuga_cartaregistrada" class="anchor" href="#bertuga_cartaregistrada"><span class="octicon octicon-link"></span></a>Bertuga_CartaRegistrada</h1>
+
+<p>Módulo de cálculo de frete por Carta Registrada para Magento</p>
+
+<h2>
+<a name="compatibilidade" class="anchor" href="#compatibilidade"><span class="octicon octicon-link"></span></a>Compatibilidade</h2>
+
+<p>Testado no Magento 1.7 e 1.9</p>
+
+<h2>
+<a name="descri%C3%A7%C3%A3o" class="anchor" href="#descri%C3%A7%C3%A3o"><span class="octicon octicon-link"></span></a>Descrição</h2>
+
+<p>O módulo faz o cálculo do frete baseado apenas no peso dos itens do pedido, até o limite de 500g, para pedidos acima desse peso, os correios usam os mesmos preços que o SEDEX usa conforme dito no site: <a href="http://www.correios.com.br/para-voce/consultas-e-solicitacoes/precos-e-prazos/servicos-nacionais_pasta/carta">http://www.correios.com.br/para-voce/consultas-e-solicitacoes/precos-e-prazos/servicos-nacionais_pasta/carta</a></p>
+
+<p>Portanto, nos casos em que o peso excede 500g, a forma de Carta Registrada não ficara disponível.</p>
+
+<p>Recomendo o uso desse módulo em conjunto com o módulo PedroTeixeira_Correios (<a href="https://github.com/pedro-teixeira/correios">https://github.com/pedro-teixeira/correios</a>), justamente para cobrir os casos em que a Carta Registrada não se aplica.</p>
+
+<h2>
+<a name="configura%C3%A7%C3%B5es" class="anchor" href="#configura%C3%A7%C3%B5es"><span class="octicon octicon-link"></span></a>Configurações</h2>
+
+<p>As configurações do módulo ficam em Sistema &gt; Configuração, e na parte lateral em Formas de Entrega. Ao clicar na aba Carta Registrada as seguintes opções se tornam disponíveis:</p>
+
+<ul>
+<li>
+<strong>Habilitar</strong> - Liga ou desliga o módulo;</li>
+<li>
+<strong>Título</strong> - O nome que aparece no checkout para o frete;</li>
+<li>
+<strong>Formato do Peso</strong> - A forma que você cadastra o peso dos seus produtos, se o valor é em Quilos(kg) ou Gramas(gr);</li>
+<li>
+<strong>Valor do Pacote</strong> - Valor a ser adicionado ao valor do frete, como os custos da embalagem para o envio. Deve ser um número decimal, separado por .(ponto). Ex: 1.50 (Um real e cinquenta centavos);</li>
+<li>
+<strong>Restringir disponibilidade</strong> - No caso de nem todos os seus produtos poderem ser enviados por Carta Registrada, é possível colocar restrições. Primeiramente o tipo de restrição:
+
+<ul>
+<li>
+<strong>Não restringir</strong>: sem restrição nenhuma;</li>
+<li>
+<strong>Produto</strong>: apenas os produtos selecionados podem ser enviados dessa forma;</li>
+<li>
+<strong>Categoria</strong>: apenas produtos que pertençam à essa(s) categoria(s) podem ser enviados dessa maneira;</li>
+</ul>
+</li>
+<li>
+<strong>Permitidos</strong> - Aqui vão os ids, das categorias ou produtos, que podem ser enviados por Carta Registrada. No caso de mais de um id, é necessário separá-los por vírgula. Ex: 100,200,300.</li>
+<li>
+<strong>Frete grátis</strong> - Se esse frete é gratuito caso o valor seguinte seja alcançado;</li>
+<li>
+<strong>Valor mínimo para frete grátis</strong> - Valor a ser alcançado para que o frete não seja cobrado. Deve ser um número decimal, separado por .(ponto). Ex: 1.50 (Um real e cinquenta centavos);</li>
+<li>
+<strong>Ordem</strong> - Prioridade na ordem em que os fretes disponíveis são listados;</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Cartaregistrada maintained by <a href="https://github.com/Bertuga">Bertuga</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
