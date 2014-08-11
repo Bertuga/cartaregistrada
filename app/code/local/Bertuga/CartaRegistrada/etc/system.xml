@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<config>
+   <sections>
+		<carriers>
+			<groups>
+				<bertuga_cartaregistrada translate="label" module="shipping">
+					<label>Carta Registrada</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>13</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+                        <active translate="label">
+                            <label>Habilitar</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <title translate="label">
+                            <label>Titulo</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <weight_type translate="label">
+                            <label>Formato do Peso</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Bertuga_CartaRegistrada_Model_Source_TipoPeso</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Como o peso dos produtos é cadastrado.</comment>
+                        </weight_type>
+                        <handling_fee translate="label">
+                            <label>Valor do pacote</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Valor adicionado ao valor do frete. Valor decimal, usando ponto. Ex: 1.50 ao invés de 1,50</comment>
+                        </handling_fee>
+                        <filter_type translate="label">
+                            <label>Restringir disponibilidade</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Bertuga_CartaRegistrada_Model_Source_TipoFiltro</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>No caso de nem todos os produtos ou categorias poderem ser enviados por carta registrada.</comment>
+                        </filter_type>
+                        <filter_value translate="label">
+                            <label>Permitidos</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Preencha com os ids dos produtos ou categorias que podem ser enviados por carta registrada. Separados por virgula. Ex: 100,200,300</comment>
+                        </filter_value>
+                        <free_shipping_enable translate="label">
+                            <label>Frete grátis</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </free_shipping_enable>
+                        <free_shipping_subtotal translate="label">
+                            <label>Valor mínimo para frete grátis</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Valor mínimo para que o frete seja gratís. Valor decimal, usando ponto. Ex: 1.50 ao invés de 1,50</comment>
+                        </free_shipping_subtotal>
+                        <sort_order translate="label">
+                            <label>Ordem</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sort_order>
+                    </fields>
+				</bertuga_cartaregistrada>
+            </groups>
+        </carriers>
+    </sections>
+</config>
