@@ -23,9 +23,9 @@ As configurações do módulo ficam em Sistema > Configuração, e na parte late
 - **Formato do Peso** - A forma que você cadastra o peso dos seus produtos, se o valor é em Quilos(kg) ou Gramas(gr);
 - **Valor do Pacote** - Valor a ser adicionado ao valor do frete, como os custos da embalagem para o envio. Deve ser um número decimal, separado por .(ponto). Ex: 1.50 (Um real e cinquenta centavos);
 - **Restringir disponibilidade** - No caso de nem todos os seus produtos poderem ser enviados por Carta Registrada, é possível colocar restrições. Primeiramente o tipo de restrição:
-**Não restringir**: sem restrição nenhuma;
-**Produto**: apenas os produtos selecionados podem ser enviados dessa forma;
-**Categoria**: apenas produtos que pertençam à essa(s) categoria(s) podem ser enviados dessa maneira;
+  - **Não restringir**: sem restrição nenhuma;
+  - **Produto**: apenas os produtos selecionados podem ser enviados dessa forma;
+  - **Categoria**: apenas produtos que pertençam à essa(s) categoria(s) podem ser enviados dessa maneira;
 - **Permitidos** - Aqui vão os ids, das categorias ou produtos, que podem ser enviados por Carta Registrada. No caso de mais de um id, é necessário separá-los por vírgula. Ex: 100,200,300.
 - **Frete grátis** - Se esse frete é gratuito caso o valor seguinte seja alcançado;
 - **Valor mínimo para frete grátis** - Valor a ser alcançado para que o frete não seja cobrado;
