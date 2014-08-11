@@ -28,5 +28,5 @@ As configurações do módulo ficam em Sistema > Configuração, e na parte late
   - **Categoria**: apenas produtos que pertençam à essa(s) categoria(s) podem ser enviados dessa maneira;
 - **Permitidos** - Aqui vão os ids, das categorias ou produtos, que podem ser enviados por Carta Registrada. No caso de mais de um id, é necessário separá-los por vírgula. Ex: 100,200,300.
 - **Frete grátis** - Se esse frete é gratuito caso o valor seguinte seja alcançado;
-- **Valor mínimo para frete grátis** - Valor a ser alcançado para que o frete não seja cobrado;
+- **Valor mínimo para frete grátis** - Valor a ser alcançado para que o frete não seja cobrado. Deve ser um número decimal, separado por .(ponto). Ex: 1.50 (Um real e cinquenta centavos);
 - **Ordem** - Prioridade na ordem em que os fretes disponíveis são listados;
