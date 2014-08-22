@@ -3,7 +3,7 @@
 	<modules>
 		<Bertuga_CartaRegistrada>
 			<active>true</active>
-			<codePool>local</codePool>
+			<codePool>community</codePool>
 		</Bertuga_CartaRegistrada>
 	</modules>
 </config>
