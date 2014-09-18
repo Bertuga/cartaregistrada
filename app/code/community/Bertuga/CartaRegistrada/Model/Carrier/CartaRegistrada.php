@@ -35,7 +35,7 @@ class Bertuga_CartaRegistrada_Model_Carrier_CartaRegistrada extends Mage_Shippin
 		
 		$method->setCarrier($this->_code);
 		$method->setCarrierTitle(Mage::getStoreConfig('carriers/'.$this->_code.'/title'));
-
+		
 		$method->setMethod('cartaregistrada');
 
 		$method->setCost($valor);
@@ -71,9 +71,9 @@ class Bertuga_CartaRegistrada_Model_Carrier_CartaRegistrada extends Mage_Shippin
 	
 	public function getValorFrete(Mage_Shipping_Model_Rate_Request $request) {
 		$handling = (float) Mage::getStoreConfig('carriers/'.$this->_code.'/handling_fee');
-		$peso = $this->getPesoTotal($request);
+		$pesoTotal = $this->getPesoTotal($request);
 		foreach(Mage::helper('cartaregistrada')->getPesosValores() as $peso => $valor )
-			if ( $peso <= intval($peso) )
+			if ( $pesoTotal <= intval($peso) )
 				return $valor+$handling;
 		return false;
 	}

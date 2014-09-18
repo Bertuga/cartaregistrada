@@ -2,7 +2,7 @@
 <config>
 	<modules>
 		<bertuga_cartaregistrada>
-			<version>1.0.0</version>
+			<version>1.0.1</version>
             <depends>
                 <Mage_Shipping/>
             </depends>
@@ -40,11 +40,11 @@
 		</sales>
 	</global>
 	<default>
-        <carriers>
-            <bertuga_cartaregistrada>
-                    <active>1</active>
-					<model>bertuga_cartaregistrada/carrier_cartaregistrada</model>
-            </bertuga_cartaregistrada>
-        </carriers>
+		<carriers>
+			<bertuga_cartaregistrada>
+				<active>1</active>
+				<model>Bertuga_CartaRegistrada_Model_Carrier_CartaRegistrada</model>
+			</bertuga_cartaregistrada>
+		</carriers>
     </default>
 </config>
