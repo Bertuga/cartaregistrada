@@ -40,11 +40,11 @@
 		</sales>
 	</global>
 	<default>
-        <carriers>
-            <bertuga_cartaregistrada>
-                    <active>1</active>
-					<model>bertuga_cartaregistrada/carrier_cartaregistrada</model>
-            </bertuga_cartaregistrada>
-        </carriers>
+		<carriers>
+			<bertuga_cartaregistrada>
+				<active>1</active>
+				<model>Bertuga_CartaRegistrada_Model_Carrier_CartaRegistrada</model>
+			</bertuga_cartaregistrada>
+		</carriers>
     </default>
 </config>
