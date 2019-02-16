@@ -1,12 +1,12 @@
-#Bertuga_CartaRegistrada
+# Bertuga_CartaRegistrada
 
 Módulo de cálculo de frete por Carta Registrada para Magento
 
-##Compatibilidade
+## Compatibilidade
 
 Testado no Magento 1.7 e 1.9
 
-##Descrição
+## Descrição
 
 O módulo faz o cálculo do frete baseado apenas no peso dos itens do pedido, até o limite de 500g, para pedidos acima desse peso, os correios usam os mesmos preços que o SEDEX usa conforme dito no site: http://www.correios.com.br/para-voce/consultas-e-solicitacoes/precos-e-prazos/servicos-nacionais_pasta/carta
 
